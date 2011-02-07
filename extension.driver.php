@@ -4,7 +4,8 @@
 
 		public function about(){
 			return array('name' => 'Show/Hide Fields',
-						 'version' => '0.1.1',
+						 'version' => '0.1',
+						 'release-date' => '2010-08-14',
 						 'author' => array('name' => 'Simone Economo',
 										   'website' => 'http://www.lineheight.net',
 										   'email' => 'my.ekoes@gmail.com'),
@@ -31,6 +32,7 @@
 
 			if ($this->__isSectionEditor($callback)) {
 				$context['parent']->Page->addStylesheetToHead(URL . '/extensions/showhide_fields/assets/showhidefields.css', 'screen', 1000);
+				$context['parent']->Page->addScriptToHead(URL . '/extensions/showhide_fields/assets/cookie.js', 1000, false);
 				$context['parent']->Page->addScriptToHead(URL . '/extensions/showhide_fields/assets/showhidefields.js', 1000, false);
 			}
 		}

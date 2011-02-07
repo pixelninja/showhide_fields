@@ -28,3 +28,8 @@
 	text-align: center;
 }
 
+li.instance h4 span.label{
+	margin-left: 15px;
+	color: #fff;
+	text-shadow: -1px 2px 2px #333;
+}
